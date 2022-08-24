@@ -11,17 +11,24 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Zodiac</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/Zodiac(logo).png</normaloff>images/Zodiac(logo).png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>20</y>
-      <width>461</width>
-      <height>421</height>
+      <y>0</y>
+      <width>591</width>
+      <height>561</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="title">
      <string/>
@@ -32,8 +39,8 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>40</y>
+       <x>90</x>
+       <y>10</y>
        <width>121</width>
        <height>121</height>
       </rect>
@@ -42,7 +49,7 @@
       <bool>false</bool>
      </property>
      <property name="text">
-      <string/>
+      <string>Овец</string>
      </property>
      <property name="icon">
       <iconset>
@@ -64,14 +71,24 @@
     <widget class="QPushButton" name="Taurus">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>50</y>
-       <width>75</width>
-       <height>23</height>
+       <x>210</x>
+       <y>10</y>
+       <width>121</width>
+       <height>121</height>
       </rect>
      </property>
      <property name="text">
       <string>Телец</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/Taurus.jpg</normaloff>images/Taurus.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>128</width>
+       <height>128</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="Gemini">
