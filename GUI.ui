@@ -36,10 +36,6 @@
     <property name="text">
      <string>Овен</string>
     </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>images/Aries.jpg</normaloff>images/Aries.jpg</iconset>
-    </property>
     <property name="iconSize">
      <size>
       <width>128</width>
@@ -64,10 +60,6 @@
     </property>
     <property name="text">
      <string>Телец</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>images/Taurus.jpg</normaloff>images/Taurus.jpg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -206,19 +198,6 @@
      <string>Рыбы</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>100</y>
-      <width>301</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
@@ -264,6 +243,16 @@
       <string>На год</string>
      </property>
     </item>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>130</y>
+      <width>391</width>
+      <height>181</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

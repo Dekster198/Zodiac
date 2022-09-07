@@ -18,5 +18,5 @@ class Parser:
         self.horo_date = block.find('h2', class_='typehead')
         self.horo_block = block.find('p', class_='')
     def print_horo(self):
-        print(f'Знак зодиака: {self.horo_title.text.strip()}\nДата рождения: {self.birthday.text.strip()}\n{self.horo_date.text.strip()}\n'
+        return(f'Знак зодиака: {self.horo_title.text.strip()}\nДата рождения: {self.birthday.text.strip()}\n{self.horo_date.text.strip()}\n'
               f'{self.horo_block.text.strip()}')
