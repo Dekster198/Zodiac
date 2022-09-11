@@ -127,7 +127,10 @@ class Ui_MainWindow(object):
         self.textBrowser.clear()
         self.btn = btn
         name = self.btn.objectName().lower()
-        horo = Parser(name)
+        timesForHoro = {'На вчера': 'yesterday', 'На сегодня': 'today', 'На завтра': 'tomorrow', 'На неделю': 'week',
+                     'На месяц': 'month', 'На год': 'year'}
+        interval = timesForHoro[self.comboBox.currentText()]
+        horo = Parser(name, interval)
         horo.parsing()
         horo.print_horo()
         self.textBrowser.append(horo.print_horo())

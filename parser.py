@@ -5,10 +5,11 @@ import fake_useragent
 class Parser:
     user = fake_useragent.UserAgent().random
     header = {'user-agent': user}
-    def __init__(self, sign):
+    def __init__(self, sign, interval):
         self.sign = sign
+        self.interval = interval
     def parsing(self):
-        url = f'https://orakul.com/horoscope/astrologic/general/{self.sign}/today.html'
+        url = f'https://orakul.com/horoscope/astrologic/general/{self.sign}/{self.interval}.html'
         response = requests.get(url, headers=self.header)
         soup = BeautifulSoup(response.text, 'lxml')
 
